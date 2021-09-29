@@ -129,6 +129,7 @@
 		CB420C2E26E8BEA0004EB342 /* Arrival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrival.swift; sourceTree = "<group>"; };
 		CB420C3026E90048004EB342 /* StopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopView.swift; sourceTree = "<group>"; };
 		CB420C3226E9039B004EB342 /* LineBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineBadge.swift; sourceTree = "<group>"; };
+		CB491AF527045DC7007368A2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "LiveStop WatchKit Extension/README.md"; sourceTree = SOURCE_ROOT; };
 		CB93647126F29B5C00F9F2DD /* VitalisApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalisApi.swift; sourceTree = "<group>"; };
 		CB93647326F29DCC00F9F2DD /* VitalisApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalisApiTests.swift; sourceTree = "<group>"; };
 		CBC49C6B2703B78200ED2C4B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
@@ -215,6 +216,7 @@
 		CB420BDD26E3F182004EB342 /* LiveStop WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CB491AF527045DC7007368A2 /* README.md */,
 				CB420C2B26E53C35004EB342 /* Views */,
 				CB420C1926E3F199004EB342 /* Models */,
 				CB420C1826E3F18D004EB342 /* Resources */,
