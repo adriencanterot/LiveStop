@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var modelData: ModelData
+    
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        StopList()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(ModelData())
     }
 }

@@ -1,0 +1,235 @@
+{
+  "realtime_error": false,
+  "realtime_empty": false,
+  "realtime": [
+    {
+      "lineRef": "114",
+      "line": {
+        "line_id": "1",
+        "order": 2,
+        "name": "Milétrie Patis-Futuroscope LPI",
+        "color": "#00A3DB",
+        "realtime": "",
+        "direction": {
+          "aller": [
+            "Milétrie Patis",
+            "Notre-Dame"
+          ],
+          "retour": [
+            "Futuroscope LPI",
+            "Place Lepetit"
+          ]
+        }
+      },
+      "destinationName": "Futuroscope LPI",
+      "vehicleAtStop": 0,
+      "aimedDepartureTime": "2021-09-14T20:26:29+0200",
+      "realtime": true,
+      "expectedDepartureTime": "2021-09-14T20:30:00+0200"
+    },
+    {
+      "lineRef": "1",
+      "line": {
+        "line_id": "11",
+        "order": 1,
+        "name": "Migné Rochereaux-Laborit/Mignaloux",
+        "color": "#90277D",
+        "realtime": "",
+        "direction": {
+          "aller": [
+            "Migné Rochereaux",
+            "Stade Auxances"
+          ],
+          "retour": [
+            "Milétrie Laborit",
+            "Mignaloux Gare",
+            "Rue des Artisans",
+            "Mignaloux Aquitaine"
+          ]
+        }
+      },
+      "destinationName": "Milétrie Laborit",
+      "vehicleAtStop": 0,
+      "aimedDepartureTime": "2021-09-14T20:27:28+0200",
+      "realtime": true,
+      "expectedDepartureTime": "2021-09-14T20:31:16+0200"
+    },
+    {
+      "lineRef": "114",
+      "line": {
+        "line_id": "1",
+        "order": 2,
+        "name": "Milétrie Patis-Futuroscope LPI",
+        "color": "#00A3DB",
+        "realtime": "",
+        "direction": {
+          "aller": [
+            "Milétrie Patis",
+            "Notre-Dame"
+          ],
+          "retour": [
+            "Futuroscope LPI",
+            "Place Lepetit"
+          ]
+        }
+      },
+      "destinationName": "Notre-Dame",
+      "vehicleAtStop": 0,
+      "aimedDepartureTime": "2021-09-14T20:33:28+0200",
+      "realtime": true,
+      "expectedDepartureTime": "2021-09-14T20:34:31+0200"
+    },
+    {
+      "lineRef": "1",
+      "line": {
+        "line_id": "11",
+        "order": 1,
+        "name": "Migné Rochereaux-Laborit/Mignaloux",
+        "color": "#90277D",
+        "realtime": "",
+        "direction": {
+          "aller": [
+            "Migné Rochereaux",
+            "Stade Auxances"
+          ],
+          "retour": [
+            "Milétrie Laborit",
+            "Mignaloux Gare",
+            "Rue des Artisans",
+            "Mignaloux Aquitaine"
+          ]
+        }
+      },
+      "destinationName": "Stade Auxances",
+      "vehicleAtStop": 0,
+      "aimedDepartureTime": "2021-09-14T20:43:29+0200",
+      "realtime": true,
+      "expectedDepartureTime": "2021-09-14T20:36:21+0200"
+    },
+    {
+      "lineRef": "161",
+      "line": {
+        "line_id": "16",
+        "order": 17,
+        "name": "Edith Augustin-Vélodrome/St Eloi",
+        "color": "#347C86",
+        "realtime": "",
+        "direction": {
+          "aller": [
+            "Vélodrome",
+            "St Eloi"
+          ],
+          "retour": [
+            "Edith Augustin",
+            "Place Lepetit"
+          ]
+        }
+      },
+      "destinationName": "Edith Augustin",
+      "vehicleAtStop": 0,
+      "aimedDepartureTime": "2021-09-14T20:38:35+0200",
+      "realtime": true,
+      "expectedDepartureTime": "2021-09-14T20:41:38+0200"
+    },
+    {
+      "lineRef": "114",
+      "line": {
+        "line_id": "1",
+        "order": 2,
+        "name": "Milétrie Patis-Futuroscope LPI",
+        "color": "#00A3DB",
+        "realtime": "",
+        "direction": {
+          "aller": [
+            "Milétrie Patis",
+            "Notre-Dame"
+          ],
+          "retour": [
+            "Futuroscope LPI",
+            "Place Lepetit"
+          ]
+        }
+      },
+      "destinationName": "Futuroscope LPI",
+      "vehicleAtStop": 0,
+      "aimedDepartureTime": "2021-09-14T20:45:29+0200",
+      "realtime": true,
+      "expectedDepartureTime": "2021-09-14T20:45:31+0200"
+    },
+    {
+      "lineRef": "114",
+      "line": {
+        "line_id": "1",
+        "order": 2,
+        "name": "Milétrie Patis-Futuroscope LPI",
+        "color": "#00A3DB",
+        "realtime": "",
+        "direction": {
+          "aller": [
+            "Milétrie Patis",
+            "Notre-Dame"
+          ],
+          "retour": [
+            "Futuroscope LPI",
+            "Place Lepetit"
+          ]
+        }
+      },
+      "destinationName": "Milétrie Patis",
+      "vehicleAtStop": 0,
+      "aimedDepartureTime": "2021-09-14T20:50:28+0200",
+      "realtime": true,
+      "expectedDepartureTime": "2021-09-14T20:50:30+0200"
+    },
+    {
+      "lineRef": "114",
+      "line": {
+        "line_id": "1",
+        "order": 2,
+        "name": "Milétrie Patis-Futuroscope LPI",
+        "color": "#00A3DB",
+        "realtime": "",
+        "direction": {
+          "aller": [
+            "Milétrie Patis",
+            "Notre-Dame"
+          ],
+          "retour": [
+            "Futuroscope LPI",
+            "Place Lepetit"
+          ]
+        }
+      },
+      "destinationName": "Futuroscope LPI",
+      "vehicleAtStop": 0,
+      "aimedDepartureTime": "2021-09-14T20:22:00+0200",
+      "realtime": false,
+      "expectedDepartureTime": "2021-09-14T21:04:29+0200"
+    },
+    {
+      "lineRef": "114",
+      "line": {
+        "line_id": "1",
+        "order": 2,
+        "name": "Milétrie Patis-Futuroscope LPI",
+        "color": "#00A3DB",
+        "realtime": "",
+        "direction": {
+          "aller": [
+            "Milétrie Patis",
+            "Notre-Dame"
+          ],
+          "retour": [
+            "Futuroscope LPI",
+            "Place Lepetit"
+          ]
+        }
+      },
+      "destinationName": "Milétrie Patis",
+      "vehicleAtStop": 0,
+      "aimedDepartureTime": "2021-09-14T21:10:28+0200",
+      "realtime": true,
+      "expectedDepartureTime": "2021-09-14T21:10:30+0200"
+    }
+  ]
+}

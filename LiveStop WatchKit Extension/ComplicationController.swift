@@ -10,12 +10,13 @@ import ClockKit
 
 class ComplicationController: NSObject, CLKComplicationDataSource {
     
+    let data = ModelData.shared
+    
     // MARK: - Complication Configuration
 
     func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void) {
         let descriptors = [
-            CLKComplicationDescriptor(identifier: "complication", displayName: "LiveStop", supportedFamilies: CLKComplicationFamily.allCases)
-            // Multiple complication support can be added here with more descriptors
+            CLKComplicationDescriptor(identifier: "Next Arrivals for Stop", displayName: "Arrivals", supportedFamilies: [.graphicCorner])
         ]
         
         // Call the handler with the currently supported complication descriptors
@@ -42,7 +43,12 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
         // Call the handler with the current timeline entry
-        handler(nil)
+        if data.closestStop != nil {
+            let template = createTemplate(for: complication, complicationData: data.arrivalByLine)
+            let entry = CLKComplicationTimelineEntry(date: Date.now, complicationTemplate: template)
+            handler(entry)
+
+        }
     }
     
     func getTimelineEntries(for complication: CLKComplication, after date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
@@ -54,6 +60,62 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
         // This method will be called once per supported complication, and the results will be cached
-        handler(nil)
+        let template = createTemplate(for: complication, complicationData: [:])
+        handler(template)
+    }
+    
+    private func createTemplate(for complication: CLKComplication, complicationData: [String: [Arrival]]?) -> CLKComplicationTemplate {
+        switch complication.family {
+        case .graphicCorner:
+            return createGraphicCornerTextImageTemplate(complicationData: complicationData)
+        default:
+            return createGraphicCornerTextImageTemplate(complicationData: complicationData)
+            
+        }
+    }
+    
+    struct ComplicationEstimate {
+        var line: Line
+        var arrival: Arrival?
+    }
+    
+    private func makeInnerText(arrivals: [String: [Arrival]]?) -> CLKTextProvider {
+        let defaultProvider = CLKSimpleTextProvider(text: "No Buses")
+        guard let arrivals = arrivals else {
+            return defaultProvider
+        }
+        
+        var estimates: [ComplicationEstimate] = []
+        for route in data.routes {
+            if let arrivalsForRoute = arrivals[route.line.number]?.filter({ route.directions.contains($0.destinationName) }) {
+                estimates.append(ComplicationEstimate(line: route.line, arrival: arrivalsForRoute.first))
+            } else {
+                print("No route for \(route.directions)")
+            }
+        }
+        if estimates.count > 0 {
+            let estimateLineNumber1 = CLKSimpleTextProvider(text: estimates[0].line.number)
+            estimateLineNumber1.tintColor = estimates[0].line.color
+            let estimateArrival1 = CLKRelativeDateTextProvider(date: estimates[0].arrival?.expectedDepartureTime ?? Date.now, style: .naturalAbbreviated, units: .minute)
+            let estimateLineNumber2 = CLKSimpleTextProvider(text: estimates[1].line.number)
+            estimateLineNumber2.tintColor = estimates[1].line.color
+            let estimateArrival2 = CLKRelativeDateTextProvider(date: estimates[1].arrival?.expectedDepartureTime ?? Date.now, style: .naturalAbbreviated, units: .minute)
+            
+            return CLKTextProvider(format: "%@: %@ %@: %@", estimateLineNumber1, estimateArrival1, estimateLineNumber2, estimateArrival2)
+        } else {
+            return defaultProvider
+        }
+
+    }
+    
+    
+    private func createGraphicCornerTextImageTemplate(complicationData: [String: [Arrival]]?) -> CLKComplicationTemplate {
+        
+
+        let innerTextProvider = makeInnerText(arrivals: complicationData)
+        
+        let template = CLKComplicationTemplateGraphicCornerStackText(innerTextProvider: innerTextProvider, outerTextProvider: CLKSimpleTextProvider(text: data.closestStop?.shortName ?? "NC"))
+        
+        return template
     }
 }

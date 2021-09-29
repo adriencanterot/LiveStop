@@ -9,10 +9,12 @@ import SwiftUI
 
 @main
 struct LiveStopApp: App {
+    @StateObject var modelData = ModelData.shared
+    
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                ContentView().environmentObject(modelData)
             }
         }
 

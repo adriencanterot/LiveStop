@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB0BB0D126FB328A000DAB45 /* ComplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0BB0D026FB328A000DAB45 /* ComplicationView.swift */; };
+		CB325E2C26E95B7E00EA160B /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB325E2B26E95B7E00EA160B /* HexColor.swift */; };
+		CB325E3226EB659400EA160B /* liveData.json in Resources */ = {isa = PBXBuildFile; fileRef = CB420C2026E3F458004EB342 /* liveData.json */; };
 		CB420BCF26E3F17F004EB342 /* LiveStop WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CB420BCE26E3F17F004EB342 /* LiveStop WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CB420BD426E3F182004EB342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB420BD326E3F182004EB342 /* Assets.xcassets */; };
 		CB420BDA26E3F182004EB342 /* LiveStop WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB420BD926E3F182004EB342 /* LiveStop WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -20,6 +23,23 @@
 		CB420BF826E3F183004EB342 /* LiveStopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB420BF726E3F183004EB342 /* LiveStopTests.swift */; };
 		CB420C0226E3F184004EB342 /* LiveStopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB420C0126E3F184004EB342 /* LiveStopUITests.swift */; };
 		CB420C0426E3F184004EB342 /* LiveStopUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB420C0326E3F184004EB342 /* LiveStopUITestsLaunchTests.swift */; };
+		CB420C1B26E3F1C0004EB342 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB420C1A26E3F1C0004EB342 /* Stop.swift */; };
+		CB420C1D26E3F221004EB342 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB420C1C26E3F221004EB342 /* Line.swift */; };
+		CB420C1F26E3F303004EB342 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB420C1E26E3F303004EB342 /* ModelData.swift */; };
+		CB420C2826E4B5C1004EB342 /* LiveBusServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB420C2726E4B5C1004EB342 /* LiveBusServer.swift */; };
+		CB420C2A26E53C25004EB342 /* StopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB420C2926E53C24004EB342 /* StopList.swift */; };
+		CB420C2D26E8BC65004EB342 /* StopRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB420C2C26E8BC65004EB342 /* StopRow.swift */; };
+		CB420C2F26E8BEA0004EB342 /* Arrival.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB420C2E26E8BEA0004EB342 /* Arrival.swift */; };
+		CB420C3126E90048004EB342 /* StopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB420C3026E90048004EB342 /* StopView.swift */; };
+		CB420C3326E9039B004EB342 /* LineBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB420C3226E9039B004EB342 /* LineBadge.swift */; };
+		CB93647226F29B5C00F9F2DD /* VitalisApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB93647126F29B5C00F9F2DD /* VitalisApi.swift */; };
+		CB93647426F29DCD00F9F2DD /* VitalisApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB93647326F29DCC00F9F2DD /* VitalisApiTests.swift */; };
+		CBC49C6C2703B78200ED2C4B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC49C6B2703B78200ED2C4B /* ExtensionDelegate.swift */; };
+		CBDBA68226F0699C006CD78A /* ModelDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDBA68126F0699C006CD78A /* ModelDataTests.swift */; };
+		CBDBA68426F0D992006CD78A /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDBA68326F0D992006CD78A /* Route.swift */; };
+		CBDBA68626F0DC06006CD78A /* CLLocation+Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDBA68526F0DC06006CD78A /* CLLocation+Coordinates.swift */; };
+		CBDBA68826F1215C006CD78A /* ArrivalLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDBA68726F1215C006CD78A /* ArrivalLabel.swift */; };
+		CBF874832700DFF000E389FF /* SwiftfulLoadingIndicators in Frameworks */ = {isa = PBXBuildFile; productRef = CBF874822700DFF000E389FF /* SwiftfulLoadingIndicators */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +99,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CB0BB0D026FB328A000DAB45 /* ComplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationView.swift; sourceTree = "<group>"; };
+		CB325E2B26E95B7E00EA160B /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
 		CB420BCA26E3F17F004EB342 /* LiveStop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveStop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB420BCE26E3F17F004EB342 /* LiveStop WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LiveStop WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB420BD326E3F182004EB342 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,6 +119,23 @@
 		CB420BFD26E3F184004EB342 /* LiveStopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveStopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB420C0126E3F184004EB342 /* LiveStopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStopUITests.swift; sourceTree = "<group>"; };
 		CB420C0326E3F184004EB342 /* LiveStopUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStopUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CB420C1A26E3F1C0004EB342 /* Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
+		CB420C1C26E3F221004EB342 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		CB420C1E26E3F303004EB342 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		CB420C2026E3F458004EB342 /* liveData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = liveData.json; sourceTree = "<group>"; };
+		CB420C2726E4B5C1004EB342 /* LiveBusServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveBusServer.swift; sourceTree = "<group>"; };
+		CB420C2926E53C24004EB342 /* StopList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopList.swift; sourceTree = "<group>"; };
+		CB420C2C26E8BC65004EB342 /* StopRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopRow.swift; sourceTree = "<group>"; };
+		CB420C2E26E8BEA0004EB342 /* Arrival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrival.swift; sourceTree = "<group>"; };
+		CB420C3026E90048004EB342 /* StopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopView.swift; sourceTree = "<group>"; };
+		CB420C3226E9039B004EB342 /* LineBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineBadge.swift; sourceTree = "<group>"; };
+		CB93647126F29B5C00F9F2DD /* VitalisApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalisApi.swift; sourceTree = "<group>"; };
+		CB93647326F29DCC00F9F2DD /* VitalisApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitalisApiTests.swift; sourceTree = "<group>"; };
+		CBC49C6B2703B78200ED2C4B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		CBDBA68126F0699C006CD78A /* ModelDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataTests.swift; sourceTree = "<group>"; };
+		CBDBA68326F0D992006CD78A /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		CBDBA68526F0DC06006CD78A /* CLLocation+Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+Coordinates.swift"; sourceTree = "<group>"; };
+		CBDBA68726F1215C006CD78A /* ArrivalLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBF874832700DFF000E389FF /* SwiftfulLoadingIndicators in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +164,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB325E2A26E958AC00EA160B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CB325E2B26E95B7E00EA160B /* HexColor.swift */,
+				CBDBA68526F0DC06006CD78A /* CLLocation+Coordinates.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CB325E2D26E960DF00EA160B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CB420C3226E9039B004EB342 /* LineBadge.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		CB420BC326E3F17F004EB342 = {
 			isa = PBXGroup;
 			children = (
@@ -158,8 +215,11 @@
 		CB420BDD26E3F182004EB342 /* LiveStop WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CB420C2B26E53C35004EB342 /* Views */,
+				CB420C1926E3F199004EB342 /* Models */,
+				CB420C1826E3F18D004EB342 /* Resources */,
 				CB420BDE26E3F182004EB342 /* LiveStopApp.swift */,
-				CB420BE026E3F182004EB342 /* ContentView.swift */,
+				CBC49C6B2703B78200ED2C4B /* ExtensionDelegate.swift */,
 				CB420BE226E3F182004EB342 /* NotificationController.swift */,
 				CB420BE426E3F182004EB342 /* NotificationView.swift */,
 				CB420BE626E3F182004EB342 /* ComplicationController.swift */,
@@ -183,6 +243,8 @@
 			isa = PBXGroup;
 			children = (
 				CB420BF726E3F183004EB342 /* LiveStopTests.swift */,
+				CBDBA68126F0699C006CD78A /* ModelDataTests.swift */,
+				CB93647326F29DCC00F9F2DD /* VitalisApiTests.swift */,
 			);
 			path = LiveStopTests;
 			sourceTree = "<group>";
@@ -194,6 +256,43 @@
 				CB420C0326E3F184004EB342 /* LiveStopUITestsLaunchTests.swift */,
 			);
 			path = LiveStopUITests;
+			sourceTree = "<group>";
+		};
+		CB420C1826E3F18D004EB342 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB420C2026E3F458004EB342 /* liveData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CB420C1926E3F199004EB342 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB325E2A26E958AC00EA160B /* Helpers */,
+				CB420C1A26E3F1C0004EB342 /* Stop.swift */,
+				CB420C2E26E8BEA0004EB342 /* Arrival.swift */,
+				CB420C1E26E3F303004EB342 /* ModelData.swift */,
+				CB93647126F29B5C00F9F2DD /* VitalisApi.swift */,
+				CB420C1C26E3F221004EB342 /* Line.swift */,
+				CBDBA68326F0D992006CD78A /* Route.swift */,
+				CB420C2726E4B5C1004EB342 /* LiveBusServer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB420C2B26E53C35004EB342 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB325E2D26E960DF00EA160B /* Helpers */,
+				CB420BE026E3F182004EB342 /* ContentView.swift */,
+				CB420C2926E53C24004EB342 /* StopList.swift */,
+				CB0BB0D026FB328A000DAB45 /* ComplicationView.swift */,
+				CB420C2C26E8BC65004EB342 /* StopRow.swift */,
+				CB420C3026E90048004EB342 /* StopView.swift */,
+				CBDBA68726F1215C006CD78A /* ArrivalLabel.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +345,9 @@
 			dependencies = (
 			);
 			name = "LiveStop WatchKit Extension";
+			packageProductDependencies = (
+				CBF874822700DFF000E389FF /* SwiftfulLoadingIndicators */,
+			);
 			productName = "LiveStop WatchKit Extension";
 			productReference = CB420BD926E3F182004EB342 /* LiveStop WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -324,6 +426,9 @@
 				Base,
 			);
 			mainGroup = CB420BC326E3F17F004EB342;
+			packageReferences = (
+				CBF874812700DFF000E389FF /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */,
+			);
 			productRefGroup = CB420BCB26E3F17F004EB342 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -359,6 +464,7 @@
 			files = (
 				CB420BEC26E3F183004EB342 /* Preview Assets.xcassets in Resources */,
 				CB420BE926E3F183004EB342 /* Assets.xcassets in Resources */,
+				CB325E3226EB659400EA160B /* liveData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,10 +490,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB420BE326E3F182004EB342 /* NotificationController.swift in Sources */,
+				CB420C3126E90048004EB342 /* StopView.swift in Sources */,
+				CB420C2A26E53C25004EB342 /* StopList.swift in Sources */,
+				CB420C3326E9039B004EB342 /* LineBadge.swift in Sources */,
 				CB420BE126E3F182004EB342 /* ContentView.swift in Sources */,
+				CBDBA68426F0D992006CD78A /* Route.swift in Sources */,
+				CBDBA68826F1215C006CD78A /* ArrivalLabel.swift in Sources */,
 				CB420BE726E3F182004EB342 /* ComplicationController.swift in Sources */,
 				CB420BDF26E3F182004EB342 /* LiveStopApp.swift in Sources */,
+				CB420C2F26E8BEA0004EB342 /* Arrival.swift in Sources */,
+				CB0BB0D126FB328A000DAB45 /* ComplicationView.swift in Sources */,
+				CBDBA68626F0DC06006CD78A /* CLLocation+Coordinates.swift in Sources */,
 				CB420BE526E3F182004EB342 /* NotificationView.swift in Sources */,
+				CB420C2D26E8BC65004EB342 /* StopRow.swift in Sources */,
+				CB420C2826E4B5C1004EB342 /* LiveBusServer.swift in Sources */,
+				CBC49C6C2703B78200ED2C4B /* ExtensionDelegate.swift in Sources */,
+				CB420C1F26E3F303004EB342 /* ModelData.swift in Sources */,
+				CB325E2C26E95B7E00EA160B /* HexColor.swift in Sources */,
+				CB420C1D26E3F221004EB342 /* Line.swift in Sources */,
+				CB93647226F29B5C00F9F2DD /* VitalisApi.swift in Sources */,
+				CB420C1B26E3F1C0004EB342 /* Stop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +517,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB93647426F29DCD00F9F2DD /* VitalisApiTests.swift in Sources */,
 				CB420BF826E3F183004EB342 /* LiveStopTests.swift in Sources */,
+				CBDBA68226F0699C006CD78A /* ModelDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,6 +742,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M44X9SK4NM;
@@ -643,6 +768,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M44X9SK4NM;
@@ -846,6 +972,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CBF874812700DFF000E389FF /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulLoadingIndicators.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CBF874822700DFF000E389FF /* SwiftfulLoadingIndicators */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBF874812700DFF000E389FF /* XCRemoteSwiftPackageReference "SwiftfulLoadingIndicators" */;
+			productName = SwiftfulLoadingIndicators;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CB420BC426E3F17F004EB342 /* Project object */;
 }
