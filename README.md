@@ -1,4 +1,4 @@
-# ⌚️ LiveStop
+## ⌚️ LiveStop
 
-### Arrêts de transport en commun en temps réels sur ⌚️ avec complications.
+Transport en commun en temps réels sur ⌚️ avec complications sur la ville de Poitiers
 
