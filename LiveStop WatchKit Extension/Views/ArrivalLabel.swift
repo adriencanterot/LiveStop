@@ -11,7 +11,7 @@ import ClockKit
 
 struct ArrivalLabel: View {
     
-    var route: Route
+    var route: Trip
     @EnvironmentObject var modelData: ModelData
     var formatter: DateComponentsFormatter {
         let timeFormatter = DateComponentsFormatter()
@@ -21,9 +21,9 @@ struct ArrivalLabel: View {
     }
     var body: some View {
         HStack {
-            let line = route.line
-            let color = HexColor(hex: line.tint)
-            LineBadge(number: line.number, tint: Color(red: color.red, green: color.green, blue: color.blue))
+            let line = route.route
+            let color = HexColor(hex: line.colorString)
+            LineBadge(number: line.shortName, tint: Color(red: color.red, green: color.green, blue: color.blue))
             Spacer()
             if let arrivalsForRoute = modelData.arrivals(for: route) {
                 HStack {
