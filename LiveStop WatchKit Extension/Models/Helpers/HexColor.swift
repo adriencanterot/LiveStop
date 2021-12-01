@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import UIKit
+import SwiftUI
 
 struct HexColor: Codable {
     
@@ -34,5 +36,15 @@ struct HexColor: Codable {
     }
     var blue: Double {
         Double(rgbValue & 0x0000FF) / 255.0
+    }
+    
+}
+
+extension Color {
+    public init(string: String) {
+        let hexColor = HexColor(hex: string)
+        let uiColor = UIColor(red: hexColor.red, green: hexColor.green, blue: hexColor.blue, alpha: 1.0)
+        self.init(uiColor: uiColor)
+        
     }
 }
