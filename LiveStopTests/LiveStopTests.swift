@@ -13,7 +13,7 @@ class LiveStopTests: XCTestCase {
     var data: Arrivals?
     
     override func setUpWithError() throws {
-        data = try? loadData("liveData.json")
+        data = loadData("liveData.json")
 
     }
 

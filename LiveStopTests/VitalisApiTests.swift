@@ -19,7 +19,7 @@ class VitalisApiTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testURLComponents() throws {
+/*  func testURLComponents() throws {
         
         let components = VitalisApi.makeURLComponents(for: .tourJeanBernard)
 
@@ -51,7 +51,6 @@ class VitalisApiTests: XCTestCase {
         }
         wait(for: [expectation], timeout: 3)
     }
-    
-    
+ */
 
 }

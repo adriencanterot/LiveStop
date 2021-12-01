@@ -20,4 +20,8 @@ class ModelDataTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
+    func testLoadTripsForStop() throws {
+        let availableTrips = data.loadTripsFor(stop: .rocheStop)
+        XCTAssert(availableTrips?.routes.count == 4)
+    }
 }
