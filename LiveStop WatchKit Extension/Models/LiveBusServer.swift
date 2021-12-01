@@ -17,5 +17,5 @@ struct Response {
 
 protocol LiveBusServer {
     
-    func request(stop: Stop, lines: [Line], date: Date) -> Response
+    func request(stop: Stop, lines: [Route], date: Date) -> Response
 }

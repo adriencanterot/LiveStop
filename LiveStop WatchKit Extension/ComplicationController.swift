@@ -75,7 +75,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     }
     
     struct ComplicationEstimate {
-        var line: Line
+        var route: Route
         var arrival: Arrival?
     }
     
@@ -86,19 +86,19 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         }
         
         var estimates: [ComplicationEstimate] = []
-        for route in data.routes {
-            if let arrivalsForRoute = arrivals[route.line.number]?.filter({ route.directions.contains($0.destinationName) }) {
-                estimates.append(ComplicationEstimate(line: route.line, arrival: arrivalsForRoute.first))
+        for trip in data.trips {
+            if let arrivalsForTrip = arrivals[trip.route.shortName]?.filter({ trip.headSign.contains($0.destinationName) }) {
+                estimates.append(ComplicationEstimate(route: trip.route, arrival: arrivalsForTrip.first))
             } else {
-                print("No route for \(route.directions)")
+                print("No route for \(trip.headSign)")
             }
         }
         if estimates.count > 0 {
-            let estimateLineNumber1 = CLKSimpleTextProvider(text: estimates[0].line.number)
-            estimateLineNumber1.tintColor = estimates[0].line.color
+            let estimateLineNumber1 = CLKSimpleTextProvider(text: estimates[0].route.shortName)
+            estimateLineNumber1.tintColor = estimates[0].route.color
             let estimateArrival1 = CLKRelativeDateTextProvider(date: estimates[0].arrival?.expectedDepartureTime ?? Date.now, style: .naturalAbbreviated, units: .minute)
-            let estimateLineNumber2 = CLKSimpleTextProvider(text: estimates[1].line.number)
-            estimateLineNumber2.tintColor = estimates[1].line.color
+            let estimateLineNumber2 = CLKSimpleTextProvider(text: estimates[1].route.shortName)
+            estimateLineNumber2.tintColor = estimates[1].route.color
             let estimateArrival2 = CLKRelativeDateTextProvider(date: estimates[1].arrival?.expectedDepartureTime ?? Date.now, style: .naturalAbbreviated, units: .minute)
             
             return CLKTextProvider(format: "%@: %@ %@: %@", estimateLineNumber1, estimateArrival1, estimateLineNumber2, estimateArrival2)

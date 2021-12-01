@@ -16,7 +16,7 @@ struct Arrivals: Codable {
 struct Arrival: Codable, Identifiable {
     var id = UUID()
     var lineReference: String
-    var line: Line
+    var line: Route
     var destinationName: String
     var aimedDepartureTime: Date
     var expectedDepartureTime: Date

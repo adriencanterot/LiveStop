@@ -15,9 +15,10 @@ final class ModelData: NSObject, ObservableObject, CLLocationManagerDelegate {
     static let shared = ModelData()
     
     var locationManager: CLLocationManager
-    let lines: [Line]
+    var gtfsDatabase: GTFSDatabase
+    let lines: [Route]
     private let stops: [Stop]
-    let routes: [Route]
+    let trips: [Trip]
     private var lastRequest: Date
     var shouldMakeAnotherRequest: Bool {
         return abs(lastRequest.timeIntervalSinceNow) >= 90
@@ -37,7 +38,7 @@ final class ModelData: NSObject, ObservableObject, CLLocationManagerDelegate {
             return nil
         }
 
-        let arrivalDictionnary: [String: [Arrival]] = Dictionary(grouping: arrivals, by: { $0.line.number })
+        let arrivalDictionnary: [String: [Arrival]] = Dictionary(grouping: arrivals, by: { $0.line.shortName })
         return arrivalDictionnary
     }
     
@@ -55,10 +56,11 @@ final class ModelData: NSObject, ObservableObject, CLLocationManagerDelegate {
         
         stops = [.tourJeanBernard, .rocheStop]
         lines = [.line1, .line11]
-        routes = [.line1toHome, .line11toHome, .line1toHospital, .line11toHospital]
+        trips = [.line1toHome, .line11toHome, .line1toHospital, .line11toHospital]
         arrivals = nil
         inRangeStops = stops
         vitalisApi = VitalisApi()
+        gtfsDatabase = try! GTFSDatabase()
         lastRequest = Date.distantPast
         shouldTriggerSegue = false
         
@@ -69,7 +71,6 @@ final class ModelData: NSObject, ObservableObject, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
-        
         
     }
     
@@ -98,9 +99,26 @@ final class ModelData: NSObject, ObservableObject, CLLocationManagerDelegate {
         }
     }
     
+    func loadCloseStops(filter: String = "", limit: Int) -> [Stop]? {
+        if let stops = try? gtfsDatabase.getClosestStops(filter: filter, coordinates: locationManager.location?.coordinate, limit: limit) {
+            return stops
+        } else {
+            return nil
+        }
+    }
     
-    func arrivals(for route: Route) -> [Arrival]? {
-        return arrivalByLine?[route.line.number]?.filter { route.directions.contains($0.destinationName)}
+    func loadTripsFor(stop: Stop) -> AvailableTrips? {
+        if let trips = try? gtfsDatabase.getTripsFromStop(stop) {
+            return trips
+        } else {
+            return nil
+        }
+    }
+    
+    
+    
+    func arrivals(for route: Trip) -> [Arrival]? {
+        return arrivalByLine?[route.route.shortName]?.filter { route.headSign.contains($0.destinationName)}
     }
     
     
