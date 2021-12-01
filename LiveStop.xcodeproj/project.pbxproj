@@ -45,7 +45,7 @@
 		CBD448C3271EF516008CC4D6 /* poitiers_gtfs.db in Resources */ = {isa = PBXBuildFile; fileRef = CBD448C2271EF516008CC4D6 /* poitiers_gtfs.db */; };
 		CBD448C52722B20A008CC4D6 /* SelectStopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD448C42722B20A008CC4D6 /* SelectStopList.swift */; };
 		CBD448C727284294008CC4D6 /* TripList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD448C627284294008CC4D6 /* TripList.swift */; };
-		CBD448C9272842A5008CC4D6 /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD448C8272842A5008CC4D6 /* RouteView.swift */; };
+		CBD448C9272842A5008CC4D6 /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD448C8272842A5008CC4D6 /* TripView.swift */; };
 		CBD448CD272CEBB6008CC4D6 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD448CC272CEBB6008CC4D6 /* Database.swift */; };
 		CBD448CF272CF2C1008CC4D6 /* DatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD448CE272CF2C1008CC4D6 /* DatabaseTests.swift */; };
 		CBDBA68226F0699C006CD78A /* ModelDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDBA68126F0699C006CD78A /* ModelDataTests.swift */; };
@@ -155,7 +155,7 @@
 		CBD448C2271EF516008CC4D6 /* poitiers_gtfs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = poitiers_gtfs.db; sourceTree = "<group>"; };
 		CBD448C42722B20A008CC4D6 /* SelectStopList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStopList.swift; sourceTree = "<group>"; };
 		CBD448C627284294008CC4D6 /* TripList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripList.swift; sourceTree = "<group>"; };
-		CBD448C8272842A5008CC4D6 /* RouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
+		CBD448C8272842A5008CC4D6 /* TripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
 		CBD448CC272CEBB6008CC4D6 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		CBD448CE272CF2C1008CC4D6 /* DatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseTests.swift; sourceTree = "<group>"; };
 		CBDBA68126F0699C006CD78A /* ModelDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataTests.swift; sourceTree = "<group>"; };
@@ -331,7 +331,7 @@
 				CBDBA68726F1215C006CD78A /* ArrivalLabel.swift */,
 				CBD448C42722B20A008CC4D6 /* SelectStopList.swift */,
 				CBD448C627284294008CC4D6 /* TripList.swift */,
-				CBD448C8272842A5008CC4D6 /* RouteView.swift */,
+				CBD448C8272842A5008CC4D6 /* TripView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -564,7 +564,7 @@
 				CBC49C6C2703B78200ED2C4B /* ExtensionDelegate.swift in Sources */,
 				CB420C1F26E3F303004EB342 /* ModelData.swift in Sources */,
 				CB325E2C26E95B7E00EA160B /* HexColor.swift in Sources */,
-				CBD448C9272842A5008CC4D6 /* RouteView.swift in Sources */,
+				CBD448C9272842A5008CC4D6 /* TripView.swift in Sources */,
 				CB420C1D26E3F221004EB342 /* Route.swift in Sources */,
 				CB64E4D9271B1037003BCDBE /* GTFSDatabase.swift in Sources */,
 				CB1F8F35274DFFFD0096BFEC /* AvailableTripsView.swift in Sources */,
