@@ -10,12 +10,13 @@ import SwiftUI
 struct StopRow: View {
     
     var stop: Stop
-    
     var body: some View {
         HStack {
             Text(stop.name)
-            Spacer()
-            Image(systemName: "star.fill").foregroundColor(Color.yellow)
+            if stop.isFavorite {
+                Spacer()
+                Image(systemName: "star.fill").foregroundColor(Color.yellow)
+            }
         }
     }
 }

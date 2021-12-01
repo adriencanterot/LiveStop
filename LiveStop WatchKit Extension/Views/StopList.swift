@@ -12,6 +12,14 @@ struct StopList: View {
 
     var body: some View {
         VStack(alignment: .leading) {
+            HStack {
+                Spacer()
+                NavigationLink(destination: SelectStopList().environmentObject(modelData)) {
+                    Image(systemName: "plus")
+                }
+                .frame(width: 45)
+                .buttonBorderShape(.roundedRectangle(radius: 200))
+            }
                 Divider()
                 List {
                     ForEach(modelData.inRangeStops) { stop in
